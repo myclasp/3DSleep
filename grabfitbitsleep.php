@@ -1,8 +1,8 @@
 <?php
-require 'fitbitphp/fitbitphp.php';
-$fitbit = new FitBitPHP("", "");
+require 'fitbitphp/fitbitphp.php'; // from https://github.com/heyitspavel/fitbitphp
+$fitbit = new FitBitPHP("", ""); //enter your key and secret
 
-$fitbit->initSession('http://callback');
+$fitbit->initSession('http://callback'); // add your callback, can be anything on your server
 //$xml = $fitbit->getProfile();
 
 date_default_timezone_set('UTC');
