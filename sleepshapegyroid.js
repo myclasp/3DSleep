@@ -1,7 +1,3 @@
-
-
-
-
  var voxelSize = 0.08*MM;
 
 
@@ -20,21 +16,15 @@ function createShape(size,score,x,y,z){
   intersect.add(box);
   intersect.add(sphere);
 
-
-
   var intersectg = new Intersection();
   intersectg.add(intersect);
   intersectg.add(new VolumePatterns.Gyroid(5*MM, 0.1*MM));
- 
-
 
 
   return intersectg;
 
 
-
 }
-
 
 
 
@@ -57,28 +47,7 @@ function main(args) {
   }
 
 
-  //union.add(createShape(size,args[1],x,y,z));
 
-
-  //union.add(createShape(size,args[2],x+size/2,y+size/2,z+size/2));
-
-
-
-
-
-/*
-  var box = new Box(0,0,0,size,size,size);
-  
-  // round the corners and edges by intersecting cube with sphere
-  // sphere with radius 32% of cube length is sufficient
-  var radius = size - 0.32*size;
-  var sphere = new Sphere(size/2,size/2,size/2,radius);
-  var union = new Union();
-  union.add(box);
-  union.add(sphere);
-  */
-        
-  
   var halfgrid = size *2;
   var grid = createGrid(-halfgrid,halfgrid,-halfgrid,halfgrid,-halfgrid,halfgrid,voxelSize);
   var maker = new GridMaker();
