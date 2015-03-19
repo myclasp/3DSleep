@@ -5,7 +5,7 @@ grabsitbitsleep.php needs to go on a server with OAUTH and PHP installed. Grab f
 
 Create a new app on http://dev.fitbit.com and add your secret and key.
 
-Then fire upgrabsitbitsleep.php in your browser, it will return x numbers each representing a 2 hour period of sleep.
+Then fire up grabfitbitsleep.php in your browser, it will return x numbers in the range 1-10 each representing a 2 hour period of your sleep last night.
 
 Head over to http://shapejs.shapeways.com/creator paste in sleepshape.js or sleepshapegyroid.js and add "text" inputs so you have x +1 in total. For the first enter 0.01 and the rest your numbers from grabfitbitsleep.php.
 
