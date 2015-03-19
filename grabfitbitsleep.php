@@ -9,20 +9,11 @@ date_default_timezone_set('UTC');
 $sleep = $fitbit->getSleep(new DateTime ( ) );
 
 
-//print_r($sleep->sleep->sleepLog->minuteData->data[1]);
-//print_r($sleep);
-
 foreach ($sleep->sleep->sleepLog->minuteData->data as $mins){
-
-        //print_r($mins->dateTime);
-        //print_r($mins->value);
-
 
         $sleepQ[substr($mins->dateTime, 0, 2)] += $mins->value;
 
-
 }
-
 
 
 $hour = 0;
