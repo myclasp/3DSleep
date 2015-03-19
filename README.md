@@ -12,3 +12,5 @@ Head over to http://shapejs.shapeways.com/creator paste in sleepshape.js or slee
 ![alt tag](http://myclasp.org/wp-content/uploads/2015/03/Screen-Shot-2015-03-19-at-11.23.45.png)
 
 Hit "run script" and it will generate a 3d viz of your sleep. each shape represents a 2 hour period of sleep and the roundedness of corners represents how restful your sleep was. sharp corners = restless.
+
+Download your file to print locally, or have shapeways print it.
